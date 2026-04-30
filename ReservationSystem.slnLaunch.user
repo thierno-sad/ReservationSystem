@@ -1,0 +1,106 @@
+[
+  {
+    "Name": "Nouveau profil",
+    "Projects": [
+      {
+        "Path": "AuthService\\AuthService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ReservationService\\ReservationService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ApiGateway\\ApiGateway.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "Nouveau profil (1)",
+    "Projects": [
+      {
+        "Path": "AuthService\\AuthService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ReservationService\\ReservationService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PaymentService\\PaymentService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ApiGateway\\ApiGateway.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "Nouveau profil (2)",
+    "Projects": [
+      {
+        "Path": "AuthService\\AuthService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "UserService\\UserService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ResourcesService\\ResourcesService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ReservationService\\ReservationService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PaymentService\\PaymentService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ApiGateway\\ApiGateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "NotificationService\\NotificationService.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "Nouveau profil (3)",
+    "Projects": [
+      {
+        "Path": "AuthService\\AuthService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "UserService\\UserService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ResourcesService\\ResourcesService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ReservationService\\ReservationService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PaymentService\\PaymentService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ApiGateway\\ApiGateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "NotificationService\\NotificationService.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

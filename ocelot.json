@@ -1,0 +1,219 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/auth/login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7299
+        }
+      ],
+      "UpstreamPathTemplate": "/auth/login",
+      "UpstreamHttpMethod": [ "POST" ],
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/auth/register",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7299
+        }
+      ],
+      "UpstreamPathTemplate": "/auth/register",
+      "UpstreamHttpMethod": [ "POST" ],
+      "SwaggerKey": "auth"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/reservations",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7242
+        }
+      ],
+      "UpstreamPathTemplate": "/reservations",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "SwaggerKey": "reservation"
+    },
+    {
+      "DownstreamPathTemplate": "/api/reservations/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7242
+        }
+      ],
+      "UpstreamPathTemplate": "/reservations/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+      "SwaggerKey": "reservation"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/resources",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7105
+        }
+      ],
+      "UpstreamPathTemplate": "/resources",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "SwaggerKey": "resource"
+    },
+    {
+      "DownstreamPathTemplate": "/api/resources/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7105
+        }
+      ],
+      "UpstreamPathTemplate": "/resources/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+      "SwaggerKey": "resource"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/users",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7150
+        }
+      ],
+      "UpstreamPathTemplate": "/users",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "SwaggerKey": "user"
+    },
+    {
+      "DownstreamPathTemplate": "/api/users/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7207
+        }
+      ],
+      "UpstreamPathTemplate": "/users/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+      "SwaggerKey": "user"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/payment",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7121
+        }
+      ],
+      "UpstreamPathTemplate": "/payment",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "SwaggerKey": "payment"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/notifications",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7051
+        }
+      ],
+      "UpstreamPathTemplate": "/notifications",
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "notification"
+    },
+    {
+      "DownstreamPathTemplate": "/api/notifications/send",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7051
+        }
+      ],
+      "UpstreamPathTemplate": "/notifications/send",
+      "UpstreamHttpMethod": [ "POST" ],
+      "SwaggerKey": "notification"
+    }
+  ],
+
+  "SwaggerEndPoints": [
+    {
+      "Key": "auth",
+      "Config": [
+        {
+          "Name": "Auth API",
+          "Version": "v1",
+          "Url": "https://localhost:7299/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "reservation",
+      "Config": [
+        {
+          "Name": "Reservation API",
+          "Version": "v1",
+          "Url": "https://localhost:7242/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "resource",
+      "Config": [
+        {
+          "Name": "Resource API",
+          "Version": "v1",
+          "Url": "https://localhost:7105/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "user",
+      "Config": [
+        {
+          "Name": "User API",
+          "Version": "v1",
+          "Url": "https://localhost:7150/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "payment",
+      "Config": [
+        {
+          "Name": "Payment API",
+          "Version": "v1",
+          "Url": "https://localhost:7121/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "notification",
+      "Config": [
+        {
+          "Name": "Notification API",
+          "Version": "v1",
+          "Url": "https://localhost:7051/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ],
+
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7298"
+  }
+}
